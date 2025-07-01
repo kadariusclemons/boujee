@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Boujee Paws 901</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">🐾 Boujee Paws 901</div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="booking-page">
+    <section class="intro">
+      <h1>Book an Appointment</h1>
+      <p>Use the form below to request a grooming session. We'll get back to you quickly to confirm availability!</p>
+    </section>
+
+    <section class="booking-form">
+      <form action="#" method="post">
+        <label for="name">Your Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="petname">Pet's Name*</label>
+        <input type="text" id="petname" name="petname" required>
+
+        <label for="breed">Breed</label>
+        <input type="text" id="breed" name="breed">
+
+        <label for="service">Select a Service*</label>
+        <select id="service" name="service" required>
+          <option value="">-- Choose a Service --</option>
+          <option value="Basic Grooming">Basic Grooming</option>
+          <option value="Spa Bath">Spa Bath</option>
+          <option value="Hair Dying">Hair Dying</option>
+          <option value="Nail Painting">Nail Painting</option>
+          <option value="Full Groom">Full Groom</option>
+          <option value="De-Shedding">De-Shedding</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date">
+
+        <label for="notes">Special Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Tell us anything we should know about your pup..."></textarea>
+
+        <button type="submit" class="btn primary">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:boujeepaws901@gmail.com">boujeepaws901@gmail.com</a></p>
+        <p>Phone: (901) 555-PAWS</p>
+        <p>Memphis, TN</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="privacy.html">Privacy Policy</a><br>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Boujee Paws 901. All rights reserved.</p>
+  </footer>
+</body>
+</html>
