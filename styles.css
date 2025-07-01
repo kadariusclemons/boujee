@@ -68,6 +68,69 @@ main, section {
   background-color: #b13e81;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Hamburger Menu (Toggle Button) */
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Hide nav links by default */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+  }
+  
+  /* Show menu toggle button */
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* Show nav links when active */
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
 /* CTA Buttons in header */
 .cta-buttons {
   display: flex;
